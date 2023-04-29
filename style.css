@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,700;1,800&display=swap');
+
+
+* {
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dbdbdb;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 600px;
+    border-radius: 1rem 1rem 10rem 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_container {
+    display: flex;
+    gap: 2rem;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
+.block label {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+input {
+    width: 100px;
+    display: flex;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid #dbdbdb;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+input::placeholder {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.submit_block {
+    display: flex;
+    align-items: center;
+}
+
+.submit_block hr {
+    width: 100%;
+}
+
+.submit_block .submit_btn {
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: #854dff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit_block .submit_btn:hover {
+    background-color: #ff5757;
+}
+
+.output h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+    height: fit-content;
+}
+
+.output span {
+    color: #854dff;
+}
+
+.attribution{
+    font-size: .6rem;
+    text-align: center;
+    color: #ff5757;
+    font-weight: bold;
+    font-style: italic;
+    display: block;   
+ }
+ 
+
+small {
+    color: red;
+}
+
+@media screen and (max-width:600px) {
+    .card {
+        width: 360px;
+    }
+    .container {
+        padding: 1rem;
+    }
+    .form_container {
+        gap: 0;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+    .submit_block {
+        position: relative;
+    }
+    .submit_btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .output {
+        margin-top: 5rem;
+    }
+    .output h1 {
+        font-size: 3.5rem;
+    }
+}
+
