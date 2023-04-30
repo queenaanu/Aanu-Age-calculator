@@ -116,10 +116,10 @@ small {
 @media screen and (max-width:600px) {
     .card {
         width: 360px;
-        margin: 0 auto;
     }
     .container {
         padding: 1rem;
+        margin: 0 auto;
     }
     .form_container {
         gap: 0;
