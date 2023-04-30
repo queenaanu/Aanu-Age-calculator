@@ -116,8 +116,7 @@ small {
 @media screen and (max-width:600px) {
     .card {
         width: 360px;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin: 0 auto;
     }
     .container {
         padding: 1rem;
